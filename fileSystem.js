@@ -8,3 +8,12 @@ const fs = require('fs');
 //     }
 // });
 
+// ahora voy a usar readfile para leer el archivo anteriorment
+
+fs.readFile('prueba.txt', 'utf-8', (error, data) =>{
+    if (!error){
+        console.log(data);
+    }else{
+        console.log('Error: ${error}');
+    }
+});
